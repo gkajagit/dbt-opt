@@ -26,6 +26,8 @@ models:
           amount charged for the order.
         data_tests:
           - not_null
+          - unique
+          
  
       - name: status
         description: >
