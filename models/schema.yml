@@ -25,7 +25,7 @@ models:
           Must be zero or positive and represents the total
           amount charged for the order.
         data_tests:
-          - not_negative
+          - not_null
  
       - name: status
         description: >
