@@ -18,4 +18,8 @@ clean-targets:
 
 models:
   analytics:
-    +materialized: table
+    staging:
+      materialized: table
+    marts:
+      materialized: table
+
