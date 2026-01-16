@@ -10,4 +10,4 @@ SELECT
     c_acctbal,
     c_comment
 FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF10.CUSTOMER
-ORDER BY c_comment;
+ORDER BY c_comment

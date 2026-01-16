@@ -14,4 +14,4 @@ JOIN SNOWFLAKE_SAMPLE_DATA.TPCH_SF10.LINEITEM l
     ON o.o_orderkey = l.l_orderkey
 GROUP BY
     o.o_orderkey,
-    c.c_name;
+    c.c_name

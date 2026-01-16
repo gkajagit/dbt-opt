@@ -7,4 +7,4 @@ SELECT
     l_partkey,
     SUM(l_extendedprice) AS total_revenue
 FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF10.LINEITEM
-GROUP BY l_partkey;
+GROUP BY l_partkey
