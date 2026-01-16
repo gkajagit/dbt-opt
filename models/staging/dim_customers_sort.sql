@@ -6,4 +6,4 @@
 SELECT
     *
 FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF100.CUSTOMER
-ORDER BY c_comment, c_address, c_name;
+ORDER BY c_comment, c_address, c_name

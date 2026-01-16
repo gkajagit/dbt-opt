@@ -23,4 +23,4 @@ GROUP BY
     c.c_comment,
     c.c_address,
     c.c_phone
-ORDER BY c.c_comment;
+ORDER BY c.c_comment
