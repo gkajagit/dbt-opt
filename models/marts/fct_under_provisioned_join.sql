@@ -1,6 +1,8 @@
 {{ config(
     materialized='table',
-    snowflake_warehouse='FINOPS_WH_XLARGE'
+    snowflake_warehouse='FINOPS_WH',
+    pre_hook="ALTER WAREHOUSE FINOPS_WH SET WAREHOUSE_SIZE = 'LARGE'",
+    post_hook="ALTER WAREHOUSE FINOPS_WH SET WAREHOUSE_SIZE = 'XLARGE'"
 ) }}
 -- dbt_model: fct_under_provisioned_join
 -- expected_behavior: severe_join_spill
