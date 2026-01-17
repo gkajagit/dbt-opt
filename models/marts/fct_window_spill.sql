@@ -1,8 +1,5 @@
 {{ config(
-    materialized='table',
-    snowflake_warehouse='FINOPS_WH',
-    pre_hook="ALTER WAREHOUSE FINOPS_WH SET WAREHOUSE_SIZE = 'LARGE'",
-    post_hook="ALTER WAREHOUSE FINOPS_WH SET WAREHOUSE_SIZE = 'XLARGE'"
+    materialized='table'
 ) }}
 -- dbt_model: fct_window_spill
 -- expected_behavior: severe_local_and_remote_spill
