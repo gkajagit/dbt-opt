@@ -1,5 +1,7 @@
-{{ config(materialized='table',snowflake_warehouse='"FINOPS_WH_XLarge"') }}
-
+{{ config(
+    materialized='table',
+    snowflake_warehouse='FINOPS_WH_XLARGE'
+) }}
 -- dbt_model: fct_under_provisioned_join
 -- expected_behavior: severe_join_spill
 
